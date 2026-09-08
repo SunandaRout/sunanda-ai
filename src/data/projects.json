@@ -1,0 +1,180 @@
+[
+  {
+    "id": "sales-dashboard",
+    "name": "Sales Dashboard using Power BI",
+    "technologies": [
+      "Power BI",
+      "Excel",
+      "DAX"
+    ],
+    "description": "An interactive sales dashboard tracking sales, profit, revenue, orders, and returns, with drill-through reports segmented by product, region, and customer.",
+    "highlights": [
+      "Data cleaning and Excel-based analysis",
+      "KPI implementation with slicers and filters",
+      "Drill-through reports for deeper analysis",
+      "Product, region, and customer segment insights"
+    ],
+    "githubUrl": "https://github.com/SunandaRout/DATA-ANALYTICS-PROJECT",
+    "liveUrl": null,
+    "source": "listed on Sunanda's uploaded resume",
+    "verified": true,
+    "githubNote": "Linked to the main data analytics portfolio repository; verify the exact subproject path if it is later split into its own repository."
+  },
+  {
+    "id": "netflix-analysis",
+    "name": "Netflix Data Analysis",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn"
+    ],
+    "description": "Analysis of a Netflix content dataset to uncover trends across ratings, genres, countries, and release patterns.",
+    "highlights": [
+      "Data cleaning and missing value handling",
+      "Feature engineering",
+      "Identified popular genres and country-wise distribution",
+      "Surfaced top-rated shows through visualization"
+    ],
+    "githubUrl": "https://github.com/SunandaRout/Netflix-",
+    "githubNote": "Matched to this repository by name on Sunanda's verified GitHub profile — verified from the current GitHub repository list.",
+    "liveUrl": null,
+    "source": "listed on Sunanda's uploaded resume",
+    "verified": true
+  },
+  {
+    "id": "customer-shopping-behaviour",
+    "name": "Customer Shopping Behaviour Analysis",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Seaborn",
+      "Plotly"
+    ],
+    "description": "Exploratory analysis of customer shopping data to understand purchasing patterns and behavior.",
+    "highlights": [
+      "RFM analysis and customer segmentation",
+      "Shopping trend and product preference analysis",
+      "Purchase frequency analysis",
+      "Marketing and customer satisfaction insights"
+    ],
+    "githubUrl": "https://github.com/SunandaRout/Customer-behaviour-dashboard",
+    "githubNote": "Matched to this repository by name on Sunanda's verified GitHub profile — verified from the current GitHub repository list.",
+    "liveUrl": null,
+    "source": "listed on Sunanda's uploaded resume",
+    "verified": true,
+    "note": "The uploaded resume lists this project as \"Customer Churn Analysis\" rather than \"Customer Shopping Behaviour Analysis.\" These may be the same project under two working titles, or two different projects — needs verification. The detailed description above (RFM analysis, segmentation, etc.) came directly from Sunanda, not from the resume, which lists only the project title with no further detail."
+  },
+  {
+    "id": "covid-vaccination-analysis",
+    "name": "COVID-19 Vaccination Analysis",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn"
+    ],
+    "description": "Analysis of COVID-19 vaccination data to study vaccination trends and coverage over time.",
+    "highlights": [
+      "Data cleaning and aggregation",
+      "Time-series analysis",
+      "Regional and age-group analysis",
+      "Identified vaccination gaps"
+    ],
+    "githubUrl": "https://github.com/SunandaRout/covid-portfolio-project",
+    "githubNote": "Matched to this repository by name on Sunanda's verified GitHub profile — verified from the current GitHub repository list.",
+    "liveUrl": null,
+    "source": "provided directly by Sunanda in the site brief — not listed on the uploaded resume",
+    "verified": true
+  },
+  {
+    "id": "retail-sales-analysis",
+    "name": "Retail Sales Analysis",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Seaborn",
+      "Plotly"
+    ],
+    "description": "Analysis of a retail sales dataset to study sales trends and profitability.",
+    "highlights": [
+      "Seasonal and category performance analysis",
+      "Region and payment mode analysis",
+      "Inventory and sales strategy insights",
+      "Business growth recommendations"
+    ],
+    "githubUrl": "https://github.com/SunandaRout/DATA-ANALYTICS-PROJECT",
+    "liveUrl": null,
+    "source": "provided directly by Sunanda in the site brief — not listed on the uploaded resume",
+    "verified": true,
+    "githubNote": "Linked to the main data analytics portfolio repository; verify the exact subproject path if it is later split into its own repository."
+  },
+  {
+    "id": "boc-rates-inflation",
+    "name": "Bank of Canada Rates & Inflation Dashboard",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Plotly",
+      "Power BI"
+    ],
+    "description": "A dashboard built on Bank of Canada API data tracking interest rates and inflation trends.",
+    "highlights": [
+      "Data cleaning and transformation from a public API",
+      "Trend and correlation analysis",
+      "Historical comparison",
+      "KPI dashboard for inflation trends"
+    ],
+    "githubUrl": "https://github.com/SunandaRout/DATA-ANALYTICS-PROJECT",
+    "liveUrl": null,
+    "source": "provided directly by Sunanda in the site brief — not listed on the uploaded resume",
+    "verified": true,
+    "githubNote": "Linked to the main data analytics portfolio repository; verify the exact subproject path if it is later split into its own repository."
+  },
+  {
+    "id": "hotel-booking-analysis",
+    "name": "Hotel Booking Analysis",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn"
+    ],
+    "description": "Analysis of hotel booking data to understand customer behavior and booking patterns.",
+    "highlights": [
+      "EDA and feature engineering",
+      "Cancellation and booking success analysis",
+      "Insights for hotel operations",
+      "Customer experience analysis"
+    ],
+    "githubUrl": "https://github.com/SunandaRout/DATA-ANALYTICS-PROJECT",
+    "liveUrl": null,
+    "source": "provided directly by Sunanda in the site brief — not listed on the uploaded resume",
+    "verified": true,
+    "githubNote": "Linked to the main data analytics portfolio repository; verify the exact subproject path if it is later split into its own repository."
+  },
+  {
+    "id": "fraud-pattern-analysis",
+    "name": "Canadian Transaction Fraud Pattern Analysis",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Seaborn"
+    ],
+    "description": "Analysis of Canadian transaction data to detect fraudulent patterns using anomaly detection.",
+    "highlights": [
+      "Feature engineering for fraud indicators",
+      "Isolation Forest for anomaly detection",
+      "Pattern visualization",
+      "Insights aimed at fraud detection and loss reduction"
+    ],
+    "githubUrl": "https://github.com/SunandaRout/DATA-ANALYTICS-PROJECT",
+    "liveUrl": null,
+    "source": "provided directly by Sunanda in the site brief — not listed on the uploaded resume",
+    "verified": true,
+    "githubNote": "Linked to the main data analytics portfolio repository; verify the exact subproject path if it is later split into its own repository."
+  }
+]

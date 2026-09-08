@@ -1,0 +1,22 @@
+{
+  "father": "Sukanta Rout",
+  "mother": "Sasmita Rout",
+  "brothers": ["Subrat Rout", "Krishna Bhoi", "Gobinda Bhoi", "Nirmalya Rout"],
+  "jiju": "Rajat Rout",
+  "sisters": ["Lopamudra Nayak", "Sushreesangita Rout", "Pujarani Roul", "Shikarani Behera", "Renuka Behera","subhasmita rout","saiprangya rout"],
+  "uncle": ["Soumyaranjan Rout"],
+  "aunt": ["Subasini Rout"],
+  "grandfather": ["Sankarshan Rout"],
+  "grandmother": ["Sabitri Rout"],
+  "mamu": ["Ratikanta Bhoi"],
+  "omm": ["Omm Bhoi"],
+  "maushi": ["Binilata Bhoi", "Anita Bhoi"],
+  "aja": ["Sudarshan Bhoi", "Purnachandra Bhoi", "Ugreshan Bhoi"],
+  "aain": ["Kanchan Bhoi", "Subasini Bhoi", "Soudamini Bhoi"],
+  "specialRelationships": {
+    "myWorld": "Kunilata Bhoi",
+    "myLove": "Shirya Biswal"
+  },
+  "source": "Explicitly provided by Sunanda Rout in the website brief.",
+  "verified": true
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "btech",
+    "level": "B.Tech",
+    "institution": "GITA Autonomous College, Bhubaneswar",
+    "branch": "Computer Science and Engineering (IoT)",
+    "startYear": 2024,
+    "endYear": 2028,
+    "status": "ongoing",
+    "cgpa": "8.0 / 10.0",
+    "source": "institution/dates confirmed in uploaded resume; CGPA provided directly by Sunanda (not listed on the resume itself)",
+    "verified": true
+  },
+  {
+    "id": "plusTwo",
+    "level": "+2 (Higher Secondary)",
+    "institution": "Government College, Chandbali",
+    "stream": "Science",
+    "startYear": 2023,
+    "endYear": 2024,
+    "percentage": "60%",
+    "source": "conflict — see note",
+    "verified": true,
+    "note": "Date conflict: Sunanda stated 2023–2024 directly, but the uploaded resume PDF lists this as 2022–2024. Institution, stream, and completion are confirmed by both; the exact start year needs verification. The 60% figure appears only in Sunanda's direct statement, not on the resume."
+  },
+  {
+    "id": "matriculation",
+    "level": "Matriculation (10th)",
+    "institution": "Dolamondap High School",
+    "board": "BSE Odisha",
+    "passingYear": 2022,
+    "percentage": "66%",
+    "source": "provided directly by Sunanda — not listed on the uploaded resume",
+    "verified": true
+  }
+]

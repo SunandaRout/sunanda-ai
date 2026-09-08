@@ -1,0 +1,8 @@
+{
+  "family": "private",
+  "specialRelationships": "private",
+  "phone": "limited",
+  "email": "public",
+  "professional": "public",
+  "note": "Visibility metadata is available for future admin controls. Personal AI answers use only explicitly provided information."
+}

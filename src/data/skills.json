@@ -1,0 +1,9 @@
+{
+  "Programming": ["Python", "SQL", "Java"],
+  "Data Analytics": ["Data Analysis", "EDA", "Data Cleaning", "Data Visualization", "Statistics", "Dashboarding"],
+  "Python Libraries": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly"],
+  "BI Tools": ["Power BI", "Excel"],
+  "Databases": ["MySQL", "PostgreSQL"],
+  "Tools": ["Git", "GitHub", "VS Code", "Jupyter Notebook", "Google Colab"],
+  "Machine Learning": ["Machine Learning Basics"]
+}

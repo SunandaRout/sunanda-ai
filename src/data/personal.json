@@ -1,0 +1,19 @@
+{
+  "name": "Sunanda Rout",
+  "title": "Data Analyst",
+  "summary": "Sunanda Rout is a Data Analyst and Computer Science and Engineering (IoT) undergraduate at GITA Autonomous College, Bhubaneswar, building hands-on experience in data analytics through internships and self-driven projects across Python, SQL, and Power BI.",
+  "currentFocus": "Data analytics — data cleaning, exploratory data analysis, visualization, dashboarding, and turning raw datasets into business insight.",
+  "careerGoals": {
+    "shortTerm": "Needs verification — not yet provided. Add via admin panel.",
+    "longTerm": "Needs verification — not yet provided. Add via admin panel."
+  },
+  "strengths": "Needs verification — not yet provided. Add via admin panel.",
+  "location": {
+    "public": "Bhubaneswar, Odisha, India (current — based on college location)",
+    "note": "Exact current city/hometown not explicitly confirmed in source documents; treat as inferred from college location, not a stated fact."
+  },
+  "photoUrl": null,
+  "private": {
+    "note": "Family and personal relationship details are stored separately in family.json because Sunanda explicitly asked the Personal AI to answer relevant questions about them."
+  }
+}

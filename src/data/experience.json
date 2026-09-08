@@ -1,0 +1,89 @@
+[
+  {
+    "id": "bluestock",
+    "company": "Bluestock",
+    "position": "Data Analyst",
+    "type": "Part-time",
+    "startDate": "2026-08",
+    "endDate": "Present",
+    "location": "Remote",
+    "responsibilities": [],
+    "skillsUsed": [],
+    "certificate": null,
+    "source": "linkedin",
+    "verified": true,
+    "note": "Role, dates, and location confirmed from LinkedIn. Detailed responsibilities not yet provided — add via admin panel."
+  },
+  {
+    "id": "riseflake",
+    "company": "Riseflake.com",
+    "position": "Campus Ambassador",
+    "type": "Part-time",
+    "startDate": "2026-08",
+    "endDate": "Present",
+    "location": "Remote",
+    "responsibilities": [],
+    "skillsUsed": ["Brand Ambassador Programs", "Brand Ambassador Management"],
+    "certificate": null,
+    "source": "linkedin",
+    "verified": true,
+    "note": "Role, dates, and location confirmed from LinkedIn. A third skill was visible in the screenshot but not legibly confirmed — add it via admin panel once confirmed."
+  },
+  {
+    "id": "cognifyz",
+    "company": "Cognifyz Technologies",
+    "position": "Data Analysis Intern",
+    "type": "Internship",
+    "startDate": "2026-06",
+    "endDate": "Present",
+    "location": "Bhubaneswar, Odisha, India · Remote",
+    "responsibilities": [
+      "Data cleaning and preprocessing",
+      "Exploratory Data Analysis (EDA)",
+      "Data visualization and dashboarding",
+      "Working with real-world datasets to generate business insights",
+      "Supporting data-driven decision making using Python, Pandas, SQL, and Power BI"
+    ],
+    "skillsUsed": ["Python", "Pandas", "SQL", "Power BI"],
+    "certificate": "Provided by user — pending upload in admin panel",
+    "source": "linkedin",
+    "verified": true,
+    "note": "Confirmed via LinkedIn only. This role does not appear on the uploaded resume PDF (which predates this internship) — no date conflict actually exists; an earlier note here incorrectly assumed the resume covered this role."
+  },
+  {
+    "id": "infotact",
+    "company": "Infotact Solutions",
+    "position": "Data Analyst",
+    "type": "Internship",
+    "startDate": "2026-06",
+    "endDate": "Present",
+    "location": "Bhubaneswar, Odisha, India · Remote",
+    "responsibilities": [
+      "Data analysis using Python, SQL, Excel, and Power BI",
+      "Statistical data analysis"
+    ],
+    "skillsUsed": ["Python", "SQL", "Excel", "Power BI", "Data Analysis", "Statistical Data Analysis"],
+    "certificate": "Provided by user — pending upload in admin panel",
+    "source": "linkedin",
+    "verified": true
+  },
+  {
+    "id": "eduskills",
+    "company": "EduSkills",
+    "position": "Data Analysis Intern",
+    "type": "Internship",
+    "startDate": "2026-04",
+    "endDate": "2026-05",
+    "location": "Remote",
+    "responsibilities": [
+      "Data analysis using Excel, SQL, and Power BI",
+      "Dataset analysis and reporting",
+      "Building dashboards for business analysis",
+      "Data visualization and data storytelling"
+    ],
+    "skillsUsed": ["Excel", "SQL", "Power BI"],
+    "certificate": "Provided by user — pending upload in admin panel",
+    "source": "resume",
+    "verified": true
+  }
+]
