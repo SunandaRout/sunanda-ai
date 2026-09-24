@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="hero-photo-frame">
               <div className="hero-photo-inner">
                 <img
-                  src={personal.photoUrl || "/profile.jpeg"}
+                  src={personal.photoUrl || "/profile.jpg"}
                   alt="Sunanda Rout professional portrait"
                   className="h-full w-full object-cover object-center"
                 />
