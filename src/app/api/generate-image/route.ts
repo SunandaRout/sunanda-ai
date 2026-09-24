@@ -2,7 +2,23 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
-const OPENAI_IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1";
+const GEMINI_IMAGE_MODEL = process.env.GEMINI_IMAGE_MODEL || "gemini-2.5-flash-image";
+
+function extractGeneratedImage(data: any) {
+  const steps = Array.isArray(data?.steps) ? data.steps : [];
+  for (const step of steps) {
+    const blocks = Array.isArray(step?.content) ? step.content : [];
+    for (const block of blocks) {
+      if (block?.type === "image" && block?.data) {
+        return `data:${block.mime_type || "image/png"};base64,${block.data}`;
+      }
+    }
+  }
+  if (data?.output_image?.data) {
+    return `data:${data.output_image.mime_type || "image/png"};base64,${data.output_image.data}`;
+  }
+  return null;
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -17,10 +33,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Image prompt is too long." }, { status: 400 });
     }
 
-    const apiKey = process.env.OPENAI_API_KEY;
+    const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
       return NextResponse.json(
-        { error: "Image generation is not configured. Add OPENAI_API_KEY to Vercel Environment Variables." },
+        { error: "Gemini image generation is not configured. Add GEMINI_API_KEY in Vercel Environment Variables." },
         { status: 503 }
       );
     }
@@ -30,57 +46,53 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Image must be smaller than 10 MB." }, { status: 400 });
     }
 
-    let response: Response;
+    const input: Array<Record<string, string>> = [{ type: "text", text: prompt }];
 
     if (hasImage) {
-      const body = new FormData();
-      body.append("model", OPENAI_IMAGE_MODEL);
-      body.append("prompt", prompt);
-      body.append("size", "1024x1024");
-      body.append("quality", "auto");
-      body.append("image", file);
-
-      response = await fetch("https://api.openai.com/v1/images/edits", {
-        method: "POST",
-        headers: { Authorization: `Bearer ${apiKey}` },
-        body,
-        cache: "no-store",
-      });
-    } else {
-      response = await fetch("https://api.openai.com/v1/images/generations", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          model: OPENAI_IMAGE_MODEL,
-          prompt,
-          size: "1024x1024",
-          quality: "auto",
-          output_format: "png",
-        }),
-        cache: "no-store",
+      const bytes = Buffer.from(await file.arrayBuffer());
+      input.push({
+        type: "image",
+        mime_type: file.type || "image/png",
+        data: bytes.toString("base64"),
       });
     }
 
+    const response = await fetch("https://generativelanguage.googleapis.com/v1beta/interactions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-goog-api-key": apiKey,
+      },
+      body: JSON.stringify({
+        model: GEMINI_IMAGE_MODEL,
+        input,
+        response_format: {
+          type: "image",
+          mime_type: "image/png",
+          aspect_ratio: "1:1",
+          image_size: "1K",
+        },
+      }),
+      cache: "no-store",
+    });
+
     if (!response.ok) {
       const detail = await response.text().catch(() => "");
-      console.error("OpenAI image API error", response.status, detail);
+      console.error("Gemini image API error", response.status, detail);
       return NextResponse.json(
-        { error: "The image generator could not process this request right now. Please try again." },
+        { error: "Gemini could not process this image request. Check your Gemini API key and try again." },
         { status: 502 }
       );
     }
 
     const data = await response.json();
-    const image = data?.data?.[0]?.b64_json;
+    const image = extractGeneratedImage(data);
 
     if (!image) {
-      return NextResponse.json({ error: "No image was returned by the image generator." }, { status: 502 });
+      return NextResponse.json({ error: "Gemini did not return an image. Please try a different prompt." }, { status: 502 });
     }
 
-    return NextResponse.json({ image: `data:image/png;base64,${image}` });
+    return NextResponse.json({ image });
   } catch (error) {
     console.error("/api/generate-image error", error);
     return NextResponse.json({ error: "Something went wrong generating the image." }, { status: 500 });
